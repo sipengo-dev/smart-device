@@ -1,0 +1,29 @@
+.main-header {
+  position: sticky;
+  top: 0;
+
+  &__wrapper {
+    min-height: 70px;
+    padding: 10px 35px 15px 26px;
+    width: 100%;
+    background: $color-dark-blue;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-btn {
+    display: none;
+  }
+
+  &__text {
+    display: none;
+  }
+}

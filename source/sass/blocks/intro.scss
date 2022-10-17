@@ -1,0 +1,35 @@
+.intro {
+  &__wrapper {
+    padding: 150px 25px 180px 25px;
+    background-image: url("../img/main_background_mobile.jpg"), $color-black-gradient;
+    background-size: cover;
+    margin-top: -15px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $color-smoky-white;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: $color-smoky-white;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  &__consultation-link {
+    width: 100%;
+    text-align: center;
+  }
+}

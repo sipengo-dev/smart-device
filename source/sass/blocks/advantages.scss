@@ -1,0 +1,41 @@
+.advantages {
+  &__wrapper {
+    padding: 50px 25px;
+    background-color: $color-light-grey;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    border: 1px solid $color-dark-grey;
+    padding: 80px 30px 35px 30px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: $color-sky-blue;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    font-family: " PT Mono", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: $color-green-blue;
+    margin: 0;
+  }
+}

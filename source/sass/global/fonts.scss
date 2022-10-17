@@ -12,10 +12,26 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "PT Mono", "Arial", sans-serif;
 
   font-display: swap;
-  src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+  src: url("../fonts/PTMono-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
