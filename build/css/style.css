@@ -999,12 +999,141 @@ button,
 }
 
 .support__subtitle {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
   color: #ffffff;
   text-align: left;
+}
+
+.support__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.support__input {
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: none;
+  padding: 15px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.support__text {
+  padding-top: 25px;
+  padding-bottom: 135px;
+}
+
+.support__btn {
+  background-color: #041827;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.support__consent {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer__wrapper {
+  background-color: #041827;
+  padding: 35px 25px;
+}
+
+.social__logo-text {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: left;
+  margin: 0;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.points__wrapper {
+  padding: 20px 0;
+}
+
+.points__title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.points__list {
+  display: none;
+}
+
+.contacts__wrapper {
+  padding: 20px 0;
+}
+
+.contacts__title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.contacts__list {
+  color: #ffffff;
+}
+
+.contacts__item {
+  margin-bottom: 10px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+}
+
+.contacts__address {
+  margin-bottom: 15px;
+  line-height: 19px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

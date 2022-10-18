@@ -1,0 +1,19 @@
+.social {
+  &__logo-text {
+    color: $color-default-white;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: left;
+    margin: 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}

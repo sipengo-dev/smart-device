@@ -1,0 +1,33 @@
+.contacts {
+  &__wrapper {
+    padding: 20px 0;
+  }
+
+  &__title {
+    color: $color-default-white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    color: $color-default-white;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  &__address {
+    margin-bottom: 15px;
+    line-height: 19px;
+  }
+}
