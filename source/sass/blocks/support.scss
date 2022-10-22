@@ -69,4 +69,72 @@
     color: $color-default-white;
     text-align: left;
   }
+
+  &__label-checkbox {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $color-default-white;
+    text-align: left;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .support {
+    &__wrapper {
+      padding: 50px 50px 125px 50px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 36px;
+      line-height: 51px;
+    }
+
+    &__subtitle {
+      margin-bottom: 25px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__form {
+      grid-template-columns: 50% 50%;
+      display: grid;
+      column-gap: 30px;
+      row-gap: 20px;
+    }
+
+    &__input {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 0;
+    }
+
+    &__text {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
+    &__btn {
+      font-size: 16px;
+      line-height: 19px;
+      padding: 15px;
+      margin-top: 15px;
+      margin-bottom: 0;
+      max-width: 265px;
+    }
+
+    &__label-checkbox {
+      padding-right: 100px;
+      margin-top: 25px;
+      font-family: "PT Mono", "Arial", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      color: $color-default-white;
+      text-align: left;
+    }
+  }
 }

@@ -1,0 +1,13 @@
+.line {
+  position: relative;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 300%;
+  height: 2px;
+  background-color: $color-text-logo;
+}

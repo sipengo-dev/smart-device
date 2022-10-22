@@ -1,6 +1,13 @@
 .points {
   &__wrapper {
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__title {

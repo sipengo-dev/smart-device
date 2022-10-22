@@ -25,6 +25,10 @@
     margin-bottom: 20px;
   }
 
+  &__text--three-part {
+    display: none;
+  }
+
   &__detail-link {
     width: 160px;
     border: 1px solid $color-sky-blue;
@@ -61,6 +65,10 @@
       background-color: $color-smoky-white;
       font-size: 14px;
       line-height: 16px;
+    }
+
+    &__text--three-part {
+      display: block;
     }
   }
 }
