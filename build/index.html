@@ -236,6 +236,13 @@
               (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
               Среди наших клиентов крупнейшие Производители светотехники России.
             </p>
+            <p class="info__text info__text--details">Smart Device - это команда профессионалов. Через нас прошло более
+              1 000 000 клиентов, 70% из которых
+              продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20
+              городов присутствия.
+              Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
+              Использование инновационных технологий помогает экономить деньги и время наших клиентов
+            </p>
             <a class="info__detail-link btn" href="#">
               Подробнее
             </a>
@@ -252,28 +259,26 @@
             </span>
             <ul class="catalog__list reset-list">
               <li class="catalog__item catalog__item--manufacture">
-                <a class="catalog__card" href="">
-                  <h3 class="catalog__card-title">
-                    Производство печатных плат
-                  </h3>
-                  <a class="catalog__card-link" href="#"></a>
-                </a>
+                <h3 class="catalog__card-title">
+                  Производство печатных плат
+                </h3>
+                <button class="catalog__card-link" type="button"></button>
+                <a class="catalog__card" href=""> </a>
               </li>
               <li class="catalog__item catalog__item--montage">
-                <a class="catalog__card" href="">
-                  <h3 class="catalog__card-title">
-                    Монтаж печатных плат
-                  </h3>
-                  <a class="catalog__card-link" href="#"></a>
-                </a>
+                <h3 class="catalog__card-title">
+                  Монтаж печатных плат
+                </h3>
+                <button class="catalog__card-link" type="button"></button>
+                <a class="catalog__card" href=""> </a>
               </li>
               <li class="catalog__item catalog__item--set">
-                <a class="catalog__card" href="">
-                  <h3 class="catalog__card-title">
-                    Комплектующие для светотехники
-                  </h3>
-                  <a class="catalog__card-link" href="#"></a>
-                </a>
+                <h3 class="catalog__card-title">
+                  Комплектующие для светотехники
+                </h3>
+                <button class="catalog__card-link" type="button"></button>
+                <a class="catalog__card" href=""> </a>
+
               </li>
             </ul>
           </div>
@@ -281,30 +286,36 @@
 
         <section class="main-container__support support">
           <div class="support__wrapper">
-            <h2 class="support__title">
-              Остались вопросы? Задайте их нам!
-            </h2>
-            <p class="support__subtitle">
-              Мы проконсультируем Вас бесплатно
-            </p>
-            <form class="support__form" method="post" action="https://echo.htmlacademy.ru/">
-              <input class="support__input support__name" type="text" id="name" required value="Имя">
+            <div class="support__image">
+              <img src="../img/paper_airplane_desktop.png" srcset="../img/paper_airplane_desktop_2x.png"
+                   alt="Бумажный самолетик." width="510" height="285">
+            </div>
+            <div class="support__form-container">
+              <h2 class="support__title">
+                Остались вопросы? Задайте их нам!
+              </h2>
+              <p class="support__subtitle">
+                Мы проконсультируем Вас бесплатно
+              </p>
+              <form class="support__form" method="post" action="https://echo.htmlacademy.ru/">
 
-              <input class="support__input support__phone" type="tel" id="phone" value="Телефон" required>
+                <input class="support__input support__name" type="text" id="name" required value="Имя">
 
-              <input class="support__input support__text" type="text" id="text" value="Ваш вопрос" size="10">
+                <input class="support__input support__phone" type="tel" id="phone" value="Телефон" required>
 
-              <button class="support__btn btn" type="submit">
-                Задать вопрос
-              </button>
+                <textarea class="support__input support__text" rows="5" cols="33">Ваш вопрос</textarea>
 
-              <label class="support__label-checkbox" for="personality">
-                <input class="support__personality-data" type="checkbox" id="personality" required checked>
-                Я согласен на обработку персональных данных
-                <span class="support__mark"></span>
-              </label>
+                <button class="support__btn btn" type="submit">
+                  Задать вопрос
+                </button>
 
-            </form>
+                <label class="support__label-checkbox" for="personality">
+                  <input class="support__personality-data" type="checkbox" id="personality" required checked>
+                  Я согласен на обработку персональных данных
+                  <span class="support__mark"></span>
+                </label>
+              </form>
+            </div>
           </div>
         </section>
 
@@ -395,7 +406,7 @@
           <div class="points__wrapper">
             <div class="points__menu">
               <h2 class="points__title">Разделы сайта</h2>
-              <button class="points__button points__close" type="button">
+              <button class="points__button points__open" type="button">
                 <span class="visually-hidden">Открыть разделы сайта.</span>
               </button>
             </div>
@@ -448,36 +459,34 @@
     </footer>
   </div>
 
-  <!-- Модалки
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
+  <div class="modal modal__close">
+    <div class="modal__feedback">
+      <button class="modal__close-btn" type="button">
+        <span class="visually-hidden">Закрыть окно.</span>
+      </button>
       <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-          </svg>
-        </button>
+        <h2 class="modal__title">Закажите звонок</h2>
+        <span class="modal__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
+        <form class="modal__form" action="" method="post">
+          <label>
+            <input class="modal__input modal__name" value="Имя" type="text" required autofocus>
+          </label>
+          <label>
+            <input class="modal__input modal__phone" value="Телефон" type="tel" required>
+          </label>
+          <label  for="text"></label>
+          <textarea class="modal__input modal__text" rows="5" cols="33" id="text">
+              Ваш вопрос
+            </textarea>
+          <button class="modal__sent-btn">Отправить</button>
+          <label class="modal__label-checkbox" for="assent">
+            <input class="modal__personality-data" type="checkbox" id="assent" checked required>
+            Я согласен на обработку персональных данных
+            <span class="modal__mark"></span>
+          </label>
+        </form>
       </div>
     </div>
   </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>-->
 </body>
 </html>
