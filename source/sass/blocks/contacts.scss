@@ -1,6 +1,7 @@
 .contacts {
   &__wrapper {
-    padding: 20px 0;
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
   &__menu {
@@ -20,7 +21,13 @@
   }
 
   &__list {
+    display: block;
     color: $color-default-white;
+    opacity: 0.7;
+  }
+
+  &__list--close {
+    display: none;
   }
 
   &__item {
@@ -35,5 +42,63 @@
   &__address {
     margin-bottom: 15px;
     line-height: 19px;
+  }
+
+  &__button {
+    display: block;
+    cursor: pointer;
+    border: 0;
+    width: 15px;
+    height: 15px;
+    background-color: $color-green-blue;
+  }
+
+  &__open {
+    position: relative;
+  }
+
+  &__close::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    border: 1px solid #c4c4c4;
+    right: 0;
+    top: 50%;
+  }
+
+  &__close::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    border: 1px solid #c4c4c4;
+    right: 0;
+    top: 49%;
+    transform: rotate(90deg);
+  }
+
+  &__close {
+    position: relative;
+  }
+
+  &__open::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    border: 1px solid #c4c4c4;
+    right: 0;
+    top: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    &__wrapper {
+      border-bottom: none;
+      margin-right: 25px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
   }
 }

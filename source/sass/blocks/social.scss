@@ -1,6 +1,7 @@
 .social {
   &__wrapper {
-    padding-bottom: 30px;
+    padding: 35px 30px 30px 30px;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
   &__logotype {
@@ -41,5 +42,21 @@
 
   &__item:not(:last-child) {
     margin-right: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    &__wrapper {
+      padding: 50px 50px 40px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: none;
+    }
+
+    &__logotype {
+      margin-bottom: 0;
+    }
   }
 }

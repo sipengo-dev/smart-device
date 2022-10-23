@@ -63,8 +63,8 @@
                     d="M12.6133 9.83144L17.5046 4.06744C17.7322 3.79555 17.7529 3.33334 17.546 3.02883C17.3391 2.72975 16.9873 2.70256 16.7556 2.97445L10.0103 10.9299L8.69436 9.38554C8.69023 9.38011 8.68609 9.37467 8.68609 9.36923C8.65712 9.33117 8.62815 9.29854 8.59505 9.26591L3.2402 2.96901C3.00846 2.69713 2.65671 2.72431 2.4498 3.02883C2.24289 3.33334 2.26358 3.79555 2.49532 4.06744L7.44462 9.88038L2.51601 15.9435C2.29255 16.2208 2.28013 16.683 2.49118 16.9821C2.60291 17.1343 2.75189 17.2159 2.90086 17.2159C3.03743 17.2159 3.17399 17.1506 3.28158 17.0201L8.28468 10.87L9.64201 12.4633C9.74961 12.5884 9.88203 12.6482 10.0145 12.6482C10.1469 12.6482 10.2834 12.5829 10.3869 12.4579L11.7815 10.8157L16.7556 17.0256C16.8632 17.1615 17.0039 17.2268 17.1405 17.2268C17.2894 17.2268 17.4343 17.1506 17.546 16.9984C17.7571 16.7047 17.7488 16.2371 17.5253 15.9598L12.6133 9.83144Z"
                     fill="#00B2FF"/>
                 </svg>
-                <p class="main-header__text">info@sd.ru</p>
               </a>
+              <p class="main-header__text">info@sd.ru</p>
             </li>
             <li class="main-header__item">
               <a class="main-header__phone" href="#">
@@ -80,8 +80,8 @@
                     d="M19.9914 8.82242C19.6152 6.61899 18.5752 4.61395 16.9773 3.01836C15.3794 1.42277 13.3715 0.384369 11.1648 0.00868773C10.8562 -0.0461871 10.5645 0.16487 10.5096 0.473013C10.4589 0.785377 10.666 1.07664 10.9788 1.13151C12.9487 1.46498 14.7453 2.39785 16.1741 3.82038C17.603 5.24712 18.533 7.0411 18.8669 9.00815C18.9134 9.28675 19.1544 9.48092 19.4292 9.48092C19.463 9.48092 19.4926 9.4767 19.5264 9.47248C19.835 9.42605 20.0463 9.13057 19.9914 8.82242Z"
                     fill="#00B2FF"/>
                 </svg>
-                <p class="main-header__text">+7 (495) 000 52 52</p>
               </a>
+              <p class="main-header__text">+7 (495) 000 52 52</p>
             </li>
           </ul>
           <button class="main-header__nav-btn btn" type="button">
@@ -299,9 +299,9 @@
               </button>
 
               <label class="support__label-checkbox" for="personality">
-                <input class="support__personality-data" type="checkbox" id="personality" required>
-                Я согласен на обработку
-                персональных данных
+                <input class="support__personality-data" type="checkbox" id="personality" required checked>
+                Я согласен на обработку персональных данных
+                <span class="support__mark"></span>
               </label>
 
             </form>
@@ -315,7 +315,7 @@
       <div class="footer__wrapper">
 
         <section class="footer__social social">
-          <div class="social__wrapper line">
+          <div class="social__wrapper">
             <h3 class="visually-hidden">Социальные сети.</h3>
             <div class="social__logotype">
               <a class="social__logo-link" href="#">
@@ -392,10 +392,10 @@
         </section>
 
         <section class="footer__points points">
-          <div class="points__wrapper line">
+          <div class="points__wrapper">
             <div class="points__menu">
               <h2 class="points__title">Разделы сайта</h2>
-              <button class="points__open points__close">
+              <button class="points__button points__close" type="button">
                 <span class="visually-hidden">Открыть разделы сайта.</span>
               </button>
             </div>
@@ -422,15 +422,14 @@
                 <a class="points__link" href="#">Контакты</a>
               </li>
             </ul>
-
           </div>
         </section>
 
         <section class="footer__contacts contacts">
-          <div class="contacts__wrapper line">
+          <div class="contacts__wrapper">
             <div class="contacts__menu">
               <h2 class="contacts__title">Наш офис</h2>
-              <button class="contacts__open contacts__close">
+              <button class="contacts__button contacts__open">
                 <span class="visually-hidden">Открыть список контактов.</span>
               </button>
             </div>

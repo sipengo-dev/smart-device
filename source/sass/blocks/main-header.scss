@@ -91,12 +91,45 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
+    &__wrapper {
+      padding: 35px 410px 45px 350px;
+    }
+
     &__nav-btn {
       display: block;
+      min-width: 160px;
+      border: 1px solid $color-smoky-white;
+      background-color: $color-green-blue;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      color: $color-smoky-white;
+      text-align: center;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      min-height: 40px;
     }
 
     &__text {
       display: block;
+      font-family: "PT Mono", "Arial", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      color: $color-smoky-white;
+      text-align: left;
+      margin: 0;
+      margin-left: 15px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 50px;
     }
   }
 }

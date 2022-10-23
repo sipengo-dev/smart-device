@@ -67,6 +67,20 @@
       font-size: 18px;
       line-height: 21px;
     }
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .intro {
+    &__wrapper {
+      padding: 185px 475px 280px 475px;
+      background-image: url("../img/main_background_desktop.jpg"), $color-black-gradient;
+    }
+
+    &__title {
+      font-size: 80px;
+      line-height: 93px;
+      margin-bottom: 40px;
+    }
   }
 }

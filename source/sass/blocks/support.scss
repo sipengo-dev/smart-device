@@ -77,6 +77,25 @@
     line-height: 16px;
     color: $color-default-white;
     text-align: left;
+    position: relative;
+  }
+
+  &__mark {
+    position: absolute;
+    width: 15px;
+    height: 14px;
+    border: 1px solid $color-default-white;
+    top: 0;
+    left: 0;
+    background-color: $color-neon-blue;
+  }
+
+  &__personality-data[type="checkbox"]:checked + .support__mark {
+    position: absolute;
+    content: "";
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

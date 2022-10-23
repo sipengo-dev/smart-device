@@ -42,22 +42,27 @@
 @media (min-width: $tablet-width) {
   .info {
     &__wrapper {
-      padding: 0 50px 80px 50px;
+      padding: 0 50px 80px 36px;
       background-color: $color-smoky-white;
+      background-image: url("../img/2022_tablet.png");
+      background-repeat: no-repeat;
+      background-position: 14px 2px;
     }
 
     &__title {
       font-size: 36px;
       line-height: 51px;
+      padding-left: 166px;
     }
 
     &__text {
       font-size: 16px;
       line-height: 21px;
+      padding-left: 166px;
     }
 
     &__detail-link {
-      width: 180px;
+      max-width: 180px;
       border: 1px solid $color-sky-blue;
       padding-top: 14px;
       padding-bottom: 8px;
@@ -65,10 +70,23 @@
       background-color: $color-smoky-white;
       font-size: 14px;
       line-height: 16px;
+      margin-left: 166px;
     }
 
     &__text--three-part {
       display: block;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .info {
+    &__wrapper {
+      padding: 5px 350px 120px 350px;
+      background-position: 335px 2px;
+    }
+
+    &__text--second-part {
+      margin-bottom: 0;
     }
   }
 }

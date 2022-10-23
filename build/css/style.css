@@ -1147,15 +1147,34 @@ button,
   line-height: 16px;
   color: #ffffff;
   text-align: left;
+  position: relative;
+}
+
+.support__mark {
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  border: 1px solid #ffffff;
+  top: 0;
+  left: 0;
+  background-color: #00b3ff;
+}
+
+.support__personality-data[type="checkbox"]:checked + .support__mark {
+  position: absolute;
+  content: "";
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer__wrapper {
   background-color: #041827;
-  padding: 35px 25px;
 }
 
 .social__wrapper {
-  padding-bottom: 30px;
+  padding: 35px 30px 30px 30px;
+  border-bottom: 1px solid rgba(248, 253, 255, 0.7);
 }
 
 .social__logotype {
@@ -1212,13 +1231,8 @@ button,
 }
 
 .points__wrapper {
-  padding: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  padding: 20px 25px;
+  border-bottom: 1px solid rgba(248, 253, 255, 0.7);
 }
 
 .points__menu {
@@ -1238,14 +1252,81 @@ button,
   text-align: left;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .points__list {
+  display: block;
+}
+
+.points__list--close {
   display: none;
 }
 
+.points__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.points__link {
+  font-family: "PT Mono", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.7;
+  text-align: left;
+}
+
+.points__button {
+  display: block;
+  cursor: pointer;
+  border: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #041827;
+}
+
+.points__close {
+  position: relative;
+}
+
+.points__close::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border: 1px solid #c4c4c4;
+  right: 0;
+  top: 50%;
+}
+
+.points__close::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border: 1px solid #c4c4c4;
+  right: 0;
+  top: 49%;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.points__open {
+  position: relative;
+}
+
+.points__open::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border: 1px solid #c4c4c4;
+  right: 0;
+  top: 50%;
+}
+
 .contacts__wrapper {
-  padding: 20px 0;
+  padding: 20px 25px;
+  border-bottom: 1px solid rgba(248, 253, 255, 0.7);
 }
 
 .contacts__menu {
@@ -1269,7 +1350,13 @@ button,
 }
 
 .contacts__list {
+  display: block;
   color: #ffffff;
+  opacity: 0.7;
+}
+
+.contacts__list--close {
+  display: none;
 }
 
 .contacts__item {
@@ -1286,18 +1373,51 @@ button,
   line-height: 19px;
 }
 
-.line {
+.contacts__button {
+  display: block;
+  cursor: pointer;
+  border: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #041827;
+}
+
+.contacts__open {
   position: relative;
 }
 
-.line::before {
+.contacts__close::before {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: -100%;
-  width: 300%;
-  height: 2px;
-  background-color: #f8fdff;
+  width: 15px;
+  border: 1px solid #c4c4c4;
+  right: 0;
+  top: 50%;
+}
+
+.contacts__close::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border: 1px solid #c4c4c4;
+  right: 0;
+  top: 49%;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.contacts__close {
+  position: relative;
+}
+
+.contacts__open::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border: 1px solid #c4c4c4;
+  right: 0;
+  top: 50%;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1417,22 +1537,27 @@ button,
   }
 
   .info__wrapper {
-    padding: 0 50px 80px 50px;
+    padding: 0 50px 80px 36px;
     background-color: #f2f5f6;
+    background-image: url("../img/2022_tablet.png");
+    background-repeat: no-repeat;
+    background-position: 14px 2px;
   }
 
   .info__title {
     font-size: 36px;
     line-height: 51px;
+    padding-left: 166px;
   }
 
   .info__text {
     font-size: 16px;
     line-height: 21px;
+    padding-left: 166px;
   }
 
   .info__detail-link {
-    width: 180px;
+    max-width: 180px;
     border: 1px solid #00b2ff;
     padding-top: 14px;
     padding-bottom: 8px;
@@ -1440,6 +1565,7 @@ button,
     background-color: #f2f5f6;
     font-size: 14px;
     line-height: 16px;
+    margin-left: 166px;
   }
 
   .info__text--three-part {
@@ -1485,6 +1611,23 @@ button,
 
   .catalog__item {
     padding: 40px 45px 155px 45px;
+  }
+
+  .catalog__card-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .catalog__card-link::before {
+    width: 7px;
+    top: 29px;
+    right: 25px;
+  }
+
+  .catalog__card-link::after {
+    width: 7px;
+    top: 33px;
+    right: 25px;
   }
 
   .support__wrapper {
@@ -1548,14 +1691,162 @@ button,
     color: #ffffff;
     text-align: left;
   }
+
+  .footer__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    row-gap: 20px;
+  }
+
+  .footer__social {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: -2;
+    grid-column-end: -1;
+  }
+
+  .social__wrapper {
+    padding: 50px 50px 40px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: none;
+  }
+
+  .social__logotype {
+    margin-bottom: 0;
+  }
+
+  .points__wrapper {
+    border-bottom: none;
+  }
+
+  .points__title {
+    margin-bottom: 20px;
+  }
+
+  .contacts__wrapper {
+    border-bottom: none;
+    margin-right: 25px;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1920px) {
+  .main-header__wrapper {
+    padding: 35px 410px 45px 350px;
+  }
+
   .main-header__nav-btn {
     display: block;
+    min-width: 160px;
+    border: 1px solid #f2f5f6;
+    background-color: #041827;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #f2f5f6;
+    text-align: center;
+    padding: 10px 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 40px;
   }
 
   .main-header__text {
     display: block;
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #f2f5f6;
+    text-align: left;
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  .main-header__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .main-header__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .intro__wrapper {
+    padding: 185px 475px 280px 475px;
+    background-image: url("../img/main_background_desktop.jpg"), -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
+    background-image: url("../img/main_background_desktop.jpg"), -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+    background-image: url("../img/main_background_desktop.jpg"), linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  }
+
+  .intro__title {
+    font-size: 80px;
+    line-height: 93px;
+    margin-bottom: 40px;
+  }
+
+  .advantages__wrapper {
+    padding: 120px 350px;
+  }
+
+  .info__wrapper {
+    padding: 5px 350px 120px 350px;
+    background-position: 335px 2px;
+  }
+
+  .info__text--second-part {
+    margin-bottom: 0;
+  }
+
+  .catalog__wrapper {
+    padding: 70px 350px 140px 350px;
+  }
+
+  .catalog__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 350px 350px 350px;
+    grid-template-columns: 350px 350px 350px;
+    -webkit-column-gap: 85px;
+    -moz-column-gap: 85px;
+    column-gap: 85px;
+  }
+
+  .catalog__item {
+    padding: 50px  80px 545px 40px;
+  }
+
+  .catalog__card-title {
+    padding-right: 60px;
+  }
+
+  .catalog__item--manufacture {
+    background-image: url("../img/background_manufacture_desktop.jpg");
+  }
+
+  .catalog__item--montage {
+    background-image: url("../img/background_montage_desktop.jpg");
+  }
+
+  .catalog__item--set {
+    background-image: url("../img/background_set_desktop.jpg");
   }
 }
