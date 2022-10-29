@@ -1,46 +1,21 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+import {openModal, closeModal} from './modules/modal.js';
+import {handleButtonClick} from './modules/consultation.js';
+import {buttonDetailsText, openContent} from './modules/additionally.js';
+import {toggleAccordionPoints, toggleAccordionContacts, accordionButtonContacts, accordionButtonPoints} from './modules/accordion.js';
 
-// ---------------------------------
 
-window.addEventListener('DOMContentLoaded', () => {
+const buttonOpenModal = document.querySelector('.main-header__feedback-btn');
+const buttonCloseModal = document.querySelector('.modal__close-btn');
+const buttonMobileConsultation = document.querySelector('.intro__consultation-link-mobile');
+const buttonTabletConsultation = document.querySelector('.intro__consultation-link');
 
-  // Utils
-  // ---------------------------------
+buttonOpenModal.addEventListener('click', openModal);
+buttonCloseModal.addEventListener('click', closeModal);
 
-  iosVhFix();
+buttonMobileConsultation.addEventListener('click', handleButtonClick);
+buttonTabletConsultation.addEventListener('click', handleButtonClick);
 
-  // Modules
-  // ---------------------------------
+accordionButtonPoints.addEventListener('click', toggleAccordionPoints);
+accordionButtonContacts.addEventListener('click', toggleAccordionContacts);
 
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
-    initModals();
-  });
-});
-
-// ---------------------------------
-
-// ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
-
-// привязывайте js не на классы, а на дата атрибуты (data-validate)
-
-// вместо модификаторов .block--active используем утилитарные классы
-// .is-active || .is-open || .is-invalid и прочие (обязателен нейминг в два слова)
-// .select.select--opened ❌ ---> [data-select].is-open ✅
-
-// выносим все в дата атрибуты
-// url до иконок пинов карты, настройки автопрокрутки слайдера, url к json и т.д.
-
-// для адаптивного JS используется matchMedia и addListener
-// const breakpoint = window.matchMedia(`(min-width:1024px)`);
-// const breakpointChecker = () => {
-//   if (breakpoint.matches) {
-//   } else {
-//   }
-// };
-// breakpoint.addListener(breakpointChecker);
-// breakpointChecker();
-
-// используйте .closest(el)
+buttonDetailsText.addEventListener('click', openContent);

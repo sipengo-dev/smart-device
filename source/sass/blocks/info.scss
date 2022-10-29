@@ -29,13 +29,25 @@
     display: none;
   }
 
-  &__detail-link {
+  &__text--four-part {
+    display: none;
+  }
+
+  &__detail-btn {
     width: 160px;
     border: 1px solid $color-sky-blue;
     padding-top: 8px;
     padding-bottom: 12px;
     color: $color-sky-blue;
     background-color: $color-smoky-white;
+  }
+
+  &__picture {
+    display: none;
+  }
+
+  &__text--active {
+    display: block;
   }
 }
 
@@ -44,21 +56,21 @@
     &__wrapper {
       padding: 0 50px 80px 36px;
       background-color: $color-smoky-white;
-      background-image: url("../img/2022_tablet.png");
-      background-repeat: no-repeat;
-      background-position: 14px 2px;
+      display: flex;
     }
 
     &__title {
       font-size: 36px;
       line-height: 51px;
-      padding-left: 166px;
     }
 
     &__text {
       font-size: 16px;
       line-height: 21px;
-      padding-left: 166px;
+    }
+
+    &__text--three-part {
+      display: block;
     }
 
     &__detail-link {
@@ -70,14 +82,20 @@
       background-color: $color-smoky-white;
       font-size: 14px;
       line-height: 16px;
-      margin-left: 166px;
     }
 
-    &__text--three-part {
+    &__picture {
       display: block;
+      margin-right: 30px;
+    }
+
+    &__image {
+      height: 320px;
+      max-width: 150px;
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .info {
     &__wrapper {
@@ -87,6 +105,10 @@
 
     &__text--second-part {
       margin-bottom: 0;
+    }
+
+    &__text--three-part {
+      display: block;
     }
   }
 }

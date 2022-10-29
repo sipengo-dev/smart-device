@@ -16,6 +16,18 @@
     margin-left: 15px;
   }
 
+  &__logo-icon {
+    width: 55px;
+    height: 55px;
+    fill: $color-sky-blue;
+  }
+
+  &__icon {
+    fill: $color-text-logo;
+    height: 40px;
+    width: 40px;
+  }
+
   &__smart-device {
     color: $color-default-white;
     font-size: 25px;

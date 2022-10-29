@@ -1,0 +1,64 @@
+.accordion__open {
+  position: relative;
+}
+
+.accordion__button {
+  display: block;
+  cursor: pointer;
+  border: 0;
+  width: 15px;
+  height: 15px;
+  background-color: $color-green-blue;
+}
+
+.accordion__close::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border: 1px solid #c4c4c4;
+  right: 0;
+  top: 50%;
+}
+
+.accordion__close::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border: 1px solid #c4c4c4;
+  right: 0;
+  top: 49%;
+  transform: rotate(90deg);
+}
+
+.accordion__close {
+  position: relative;
+}
+
+.accordion__open::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border: 1px solid #c4c4c4;
+  right: 0;
+  top: 50%;
+}
+
+.accordion__list {
+  display: block;
+  color: $color-default-white;
+  opacity: 0.7;
+}
+
+.accordion__list--close {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .accordion__button {
+    display: none;
+  }
+
+  .accordion__list {
+    display: block;
+  }
+}

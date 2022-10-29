@@ -20,71 +20,18 @@
     margin-bottom: 15px;
   }
 
-  &__list {
-    display: block;
-  }
-
-  &__list--close {
-    display: none;
-  }
-
   &__item:not(:last-child) {
     margin-bottom: 10px;
   }
 
   &__link {
-    font-family: "PT Mono", Arial, sans-serif;
+    font-family: "PT Mono", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     color: $color-default-white;
     opacity: 0.7;
     text-align: left;
-  }
-
-  &__button {
-    display: block;
-    cursor: pointer;
-    border: 0;
-    width: 15px;
-    height: 15px;
-    background-color: $color-green-blue;
-  }
-
-  &__close {
-    position: relative;
-  }
-
-  &__close::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    border: 1px solid #c4c4c4;
-    right: 0;
-    top: 50%;
-  }
-
-  &__close::after {
-    content: "";
-    position: absolute;
-    width: 15px;
-    border: 1px solid #c4c4c4;
-    right: 0;
-    top: 49%;
-    transform: rotate(90deg);
-  }
-
-  &__open {
-    position: relative;
-  }
-
-  &__open::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    border: 1px solid #c4c4c4;
-    right: 0;
-    top: 50%;
   }
 }
 

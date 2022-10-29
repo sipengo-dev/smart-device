@@ -28,7 +28,7 @@
     margin-right: 20px;
   }
 
-  &__nav-btn {
+  &__feedback-btn {
     display: none;
   }
 
@@ -43,6 +43,13 @@
   &__logo-icon {
     height: 35px;
     width: 35px;
+    fill: $color-sky-blue;
+  }
+
+  &__icon {
+    fill: $color-sky-blue;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -95,7 +102,7 @@
       padding: 35px 410px 45px 350px;
     }
 
-    &__nav-btn {
+    &__feedback-btn {
       display: block;
       min-width: 160px;
       border: 1px solid $color-smoky-white;

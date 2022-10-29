@@ -8,6 +8,7 @@
   display: flex;
   background-color: $color-dark-page;
 
+
   &__feedback {
     position: relative;
     display: block;
@@ -134,4 +135,9 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  &__close {
+    display: none;
+  }
 }
+
