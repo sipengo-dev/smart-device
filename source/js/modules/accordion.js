@@ -5,7 +5,7 @@ const accordionContentPoints = document.querySelector('.points__list');
 const accordionContentContacts = document.querySelector('.contacts__list');
 
 function toggleAccordionPoints() {
-  if (accordionButtonPoints.classList.contains('accordion__close')) {
+  if (accordionButtonPoints.classList.contains('accordion-close')) {
     openAccordionPoints();
     closeAccordionContacts();
   } else {
@@ -14,7 +14,7 @@ function toggleAccordionPoints() {
 }
 
 function toggleAccordionContacts() {
-  if (accordionButtonContacts.classList.contains('accordion__close')) {
+  if (accordionButtonContacts.classList.contains('accordion-close')) {
     openAccordionContacts();
     closeAccordionPoints();
   } else {
@@ -23,27 +23,27 @@ function toggleAccordionContacts() {
 }
 
 function openAccordionPoints() {
-  accordionButtonPoints.classList.remove('accordion__close');
-  accordionButtonPoints.classList.add('accordion__open');
-  accordionContentPoints.classList.remove('accordion__list--close');
+  accordionButtonPoints.classList.remove('accordion-close');
+  accordionButtonPoints.classList.add('accordion-open');
+  accordionContentPoints.classList.remove('accordion-list-close');
 }
 
 function openAccordionContacts() {
-  accordionButtonContacts.classList.remove('accordion__close');
-  accordionButtonContacts.classList.add('accordion__open');
-  accordionContentContacts.classList.remove('accordion__list--close');
+  accordionButtonContacts.classList.remove('accordion-close');
+  accordionButtonContacts.classList.add('accordion-open');
+  accordionContentContacts.classList.remove('accordion-list-close');
 }
 
 function closeAccordionPoints() {
-  accordionButtonPoints.classList.add('accordion__close');
-  accordionButtonPoints.classList.remove('accordion__open');
-  accordionContentPoints.classList.add('accordion__list--close');
+  accordionButtonPoints.classList.add('accordion-close');
+  accordionButtonPoints.classList.remove('accordion-open');
+  accordionContentPoints.classList.add('accordion-list-close');
 }
 
 function closeAccordionContacts() {
-  accordionButtonContacts.classList.add('accordion__close');
-  accordionButtonContacts.classList.remove('accordion__open');
-  accordionContentContacts.classList.add('accordion__list--close');
+  accordionButtonContacts.classList.add('accordion-close');
+  accordionButtonContacts.classList.remove('accordion-open');
+  accordionContentContacts.classList.add('accordion-list-close');
 }
 
 

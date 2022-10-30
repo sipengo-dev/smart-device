@@ -89,6 +89,22 @@
     height: 100%;
     top: 0;
   }
+
+  @media (min-resolution: 2dppx) {
+    .catalog {
+      &__item--manufacture {
+        background-image: url("../img/background_manufacture_mobile_2x.jpg");
+      }
+
+      &__item--montage {
+        background-image: url("../img/background_montage_mobile_2x.jpg");
+      }
+
+      &__item--set {
+        background-image: url("../img/background_set_mobile_2x.jpg");
+      }
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -130,28 +146,43 @@
       background-image: url("../img/background_set_tablet.jpg");
     }
 
-    &__item {
-      padding: 40px 45px 155px 45px;
-    }
+    @media (min-resolution: 2dppx) {
+      .catalog__item--manufacture {
+        background-image: url("../img/background_manufacture_tablet_2x.jpg");
+      }
 
-    &__card-link {
-      width: 60px;
-      height: 60px;
-    }
+      .catalog__item--montage {
+        background-image: url("../img/background_montage_tablet_2x.jpg");
+      }
 
-    &__card-link::before {
-      width: 7px;
-      top: 29px;
-      right: 25px;
-    }
-
-    &__card-link::after {
-      width: 7px;
-      top: 33px;
-      right: 25px;
+      .catalog__item--set {
+        background-image: url("../img/background_set_tablet_2x.jpg");
+      }
     }
   }
+
+  &__item {
+    padding: 40px 45px 155px 45px;
+  }
+
+  &__card-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__card-link::before {
+    width: 7px;
+    top: 29px;
+    right: 25px;
+  }
+
+  &__card-link::after {
+    width: 7px;
+    top: 33px;
+    right: 25px;
+  }
 }
+
 
 @media (min-width: $desktop-width) {
   .catalog {
@@ -183,6 +214,22 @@
 
     &__item--set {
       background-image: url("../img/background_set_desktop.jpg");
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .catalog {
+      &__item--manufacture {
+        background-image: url("../img/background_manufacture_desktop_2x.jpg");
+      }
+
+      &__item--montage {
+        background-image: url("../img/background_montage_desktop_2x.jpg");
+      }
+
+      &__item--set {
+        background-image: url("../img/background_set_desktop_2x.jpg");
+      }
     }
   }
 }

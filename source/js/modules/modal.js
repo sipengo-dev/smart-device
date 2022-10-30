@@ -7,15 +7,15 @@ function onModalEscKeydown(evt) {
   }
 }
 function openModal() {
-  if (modal.classList.contains('modal__close')) {
-    modal.classList.remove('modal__close');
+  if (modal.classList.contains('modal-close')) {
+    modal.classList.remove('modal-close');
     document.addEventListener('keydown', onModalEscKeydown);
   }
 }
 
 function closeModal() {
-  if (!modal.classList.contains('modal__close')) {
-    modal.classList.add('modal__close');
+  if (!modal.classList.contains('modal-close')) {
+    modal.classList.add('modal-close');
     document.removeEventListener('keydown', onModalEscKeydown);
   }
 }
