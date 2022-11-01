@@ -1,6 +1,7 @@
 .support {
+  background-color: $color-neon-blue;
+
   &__wrapper {
-    background-color: $color-neon-blue;
     padding: 50px 25px 90px 25px;
   }
 
@@ -164,11 +165,13 @@
 
 @media (min-width: $desktop-width) {
   .support {
+    background: linear-gradient(130deg, #026593 30%, #00B3FF 0%);
+
     &__wrapper {
-      padding: 170px 350px 250px 350px;
+      padding: 170px 0 250px 0;
       display: flex;
       gap: 115px;
-      background-color: $color-neon-blue;
+
     }
 
     &__image {

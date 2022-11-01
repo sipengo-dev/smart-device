@@ -1,9 +1,11 @@
 .intro {
+  background-image: url("../img/main_background_mobile.jpg"), $color-black-gradient;
+  background-size: cover;
+  margin-top: -15px;
+
   &__wrapper {
     padding: 80px 25px 190px 25px;
-    background-image: url("../img/main_background_mobile.jpg"), $color-black-gradient;
-    background-size: cover;
-    margin-top: -15px;
+
   }
 
   &__title {
@@ -39,9 +41,7 @@
 
   @media (min-resolution: 2dppx) {
     .intro {
-      &__wrapper {
-        background-image: url("../img/main_background_mobile_2x.jpg"), $color-black-gradient;
-      }
+      background-image: url("../img/main_background_mobile_2x.jpg"), $color-black-gradient;
     }
   }
 }
@@ -49,15 +49,15 @@
 
 @media (min-width: $tablet-width) {
   .intro {
+    background-image: url("../img/main_background_tablet.jpg");
+
     &__wrapper {
       padding: 80px 50px 205px 50px;
-      background-image: url("../img/main_background_tablet.jpg");
       margin-top: -15px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/main_background_tablet_2x.jpg"), $color-black-gradient;
-      }
     }
+    @media (min-resolution: 2dppx) {
+    background-image: url("../img/main_background_tablet_2x.jpg"), $color-black-gradient;
+  }
 
     &__title {
       font-size: 64px;
@@ -85,13 +85,15 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    &__wrapper {
-      padding: 185px 475px 280px 475px;
-      background-image: url("../img/main_background_desktop.jpg"), $color-black-gradient;
+    background-image: url("../img/main_background_desktop.jpg"), $color-black-gradient;
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/main_background_desktop_2x.jpg"), $color-black-gradient;
-      }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main_background_desktop_2x.jpg"), $color-black-gradient;
+    }
+    &__wrapper {
+      padding-top: 185px;
+      padding-bottom: 280px;
+
     }
 
     &__title {

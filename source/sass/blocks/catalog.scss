@@ -1,6 +1,7 @@
 .catalog {
+  background-color: $color-green-blue;
+
   &__wrapper {
-    background-color: $color-green-blue;
     padding: 50px 25px 56px 25px;
   }
 
@@ -187,7 +188,10 @@
 @media (min-width: $desktop-width) {
   .catalog {
     &__wrapper {
-      padding: 70px 350px 140px 350px;
+      padding-top: 70px;
+      padding-bottom: 140px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &__list {

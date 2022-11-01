@@ -236,7 +236,6 @@ button,
 
 .wrapper {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -477,13 +476,16 @@ button,
   height: 20px;
 }
 
-.intro__wrapper {
-  padding: 80px 25px 190px 25px;
+.intro {
   background-image: url("../img/main_background_mobile.jpg"), -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
   background-image: url("../img/main_background_mobile.jpg"), -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   background-image: url("../img/main_background_mobile.jpg"), linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   background-size: cover;
   margin-top: -15px;
+}
+
+.intro__wrapper {
+  padding: 80px 25px 190px 25px;
 }
 
 .intro__title {
@@ -517,9 +519,12 @@ button,
   display: none;
 }
 
+.advantages {
+  background-color: #f2f5f6;
+}
+
 .advantages__wrapper {
   padding: 50px 25px;
-  background-color: #f2f5f6;
 }
 
 .advantages__list {
@@ -588,9 +593,12 @@ button,
   margin: 0;
 }
 
+.info {
+  background-color: #f2f5f6;
+}
+
 .info__wrapper {
   padding: 0 25px 80px 25px;
-  background-color: #f2f5f6;
 }
 
 .info__title {
@@ -639,8 +647,11 @@ button,
   display: block;
 }
 
-.catalog__wrapper {
+.catalog {
   background-color: #041827;
+}
+
+.catalog__wrapper {
   padding: 50px 25px 56px 25px;
 }
 
@@ -739,8 +750,11 @@ button,
   top: 0;
 }
 
-.support__wrapper {
+.support {
   background-color: #00b3ff;
+}
+
+.support__wrapper {
   padding: 50px 25px 90px 25px;
 }
 
@@ -847,7 +861,7 @@ button,
   display: none;
 }
 
-.footer__wrapper {
+.footer {
   background-color: #041827;
 }
 
@@ -1110,9 +1124,12 @@ button,
     width: 55px;
   }
 
+  .intro {
+    background-image: url("../img/main_background_tablet.jpg");
+  }
+
   .intro__wrapper {
     padding: 80px 50px 205px 50px;
-    background-image: url("../img/main_background_tablet.jpg");
     margin-top: -15px;
   }
 
@@ -1170,9 +1187,12 @@ button,
     gap: 30px;
   }
 
+  .info {
+    background-color: #f2f5f6;
+  }
+
   .info__wrapper {
     padding: 0 50px 80px 36px;
-    background-color: #f2f5f6;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1401,7 +1421,7 @@ button,
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
-  .intro__wrapper {
+  .intro {
     background-image: url("../img/main_background_tablet_2x.jpg"), -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
     background-image: url("../img/main_background_tablet_2x.jpg"), -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
     background-image: url("../img/main_background_tablet_2x.jpg"), linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
@@ -1420,12 +1440,16 @@ button,
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1024px) {
+  .content-wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .main-header__wrapper {
     padding-top: 35px;
     padding-bottom: 45px;
-    padding-right: 350px;
-    padding-left: 350px;
   }
 
   .main-header__feedback-btn {
@@ -1470,11 +1494,15 @@ button,
     margin-right: 50px;
   }
 
-  .intro__wrapper {
-    padding: 185px 475px 280px 475px;
+  .intro {
     background-image: url("../img/main_background_desktop.jpg"), -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
     background-image: url("../img/main_background_desktop.jpg"), -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
     background-image: url("../img/main_background_desktop.jpg"), linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  }
+
+  .intro__wrapper {
+    padding-top: 185px;
+    padding-bottom: 280px;
   }
 
   .intro__title {
@@ -1484,12 +1512,15 @@ button,
   }
 
   .advantages__wrapper {
-    padding: 120px 350px;
+    padding-top: 120px 0;
+  }
+
+  .info {
+    background-position: 335px 2px;
   }
 
   .info__wrapper {
-    padding: 5px 350px 120px 350px;
-    background-position: 335px 2px;
+    padding: 5px 0 120px 0;
   }
 
   .info__text--second-part {
@@ -1501,7 +1532,10 @@ button,
   }
 
   .catalog__wrapper {
-    padding: 70px 350px 140px 350px;
+    padding-top: 70px;
+    padding-bottom: 140px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .catalog__list {
@@ -1534,13 +1568,17 @@ button,
     background-image: url("../img/background_set_desktop.jpg");
   }
 
+  .support {
+    background: -o-linear-gradient(320deg, #026593 30%, #00B3FF 0%);
+    background: linear-gradient(130deg, #026593 30%, #00B3FF 0%);
+  }
+
   .support__wrapper {
-    padding: 170px 350px 250px 350px;
+    padding: 170px 0 250px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 115px;
-    background-color: #00b3ff;
   }
 
   .support__image {
@@ -1563,7 +1601,7 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 50px 350px;
+    padding: 50px 0;
   }
 
   .social__wrapper {
@@ -1581,8 +1619,8 @@ button,
   }
 }
 
-@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1920px) and (min-resolution: 2dppx) {
-  .intro__wrapper {
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
+  .intro {
     background-image: url("../img/main_background_desktop_2x.jpg"), -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
     background-image: url("../img/main_background_desktop_2x.jpg"), -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
     background-image: url("../img/main_background_desktop_2x.jpg"), linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
@@ -1602,7 +1640,7 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .intro .intro__wrapper {
+  .intro .intro {
     background-image: url("../img/main_background_mobile_2x.jpg"), -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
     background-image: url("../img/main_background_mobile_2x.jpg"), -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
     background-image: url("../img/main_background_mobile_2x.jpg"), linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);

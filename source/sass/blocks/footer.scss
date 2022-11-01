@@ -1,6 +1,7 @@
 .footer {
+  background-color: $color-green-blue;
+
   &__wrapper {
-    background-color: $color-green-blue;
   }
 }
 
@@ -24,7 +25,7 @@
     &__wrapper {
       display: flex;
       justify-content: space-between;
-      padding: 50px 350px;
+      padding: 50px 0;
     }
   }
 }
