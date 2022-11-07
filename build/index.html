@@ -308,10 +308,10 @@
             <div class="info__picture">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)"
-                        srcset="../img/webp/2022_desktop.webp 1x, ../img/webp/2022_desktop_2x.webp 2x">
+                        srcset="./img/webp/2022_desktop.webp 1x, ./img/webp/2022_desktop_2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
-                        srcset="../img/webp/2022_tablet.webp 1x, ../img/webp/2022_tablet_2x.webp 2x">
-                <img class="info__image" src="../img/2022_tablet.png" srcset="../img/2022_tablet_2x.png"
+                        srcset="./img/webp/2022_tablet.webp 1x, ./img/webp/2022_tablet_2x.webp 2x">
+                <img class="info__image" src="./img/2022_tablet.png" srcset="./img/2022_tablet_2x.png"
                      alt="2022 год." width="150" height="320">
               </picture>
             </div>
@@ -387,8 +387,8 @@
             <div class="support__image">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)"
-                        srcset="../img/webp/paper_airplane_desktop.webp 1x, ../img/webp/paper_airplane_desktop_2x.webp 2x">
-                <img src="../img/paper_airplane_desktop.png" srcset="../img/paper_airplane_desktop_2x.png"
+                        srcset="./img/webp/paper_airplane_desktop.webp 1x, ./img/webp/paper_airplane_desktop_2x.webp 2x">
+                <img src="./img/paper_airplane_desktop.png" srcset="./img/paper_airplane_desktop_2x.png"
                      alt="Бумажный самолетик." width="510" height="285">
               </picture>
             </div>
@@ -401,13 +401,13 @@
               </p>
               <form class="support__form" method="post" action="#">
                 <label>
-                  <input class="support__input support__name" type="text" id="name" required value="Имя">
+                  <input class="support__input support__name" type="text" id="name" required placeholder="Имя">
                 </label>
                 <label>
-                  <input class="support__input support__phone" type="tel" id="call" value="Телефон" required>
+                  <input class="support__input support__phone phone" type="tel" id="call" placeholder="Телефон" required>
                 </label>
 
-                <textarea class="support__input support__text" rows="5" cols="33">Ваш вопрос</textarea>
+                <textarea class="support__input support__text" rows="5" cols="33" placeholder="Ваш вопрос"></textarea>
 
                 <button class="support__btn btn" type="submit">
                   Задать вопрос
@@ -535,16 +535,15 @@
       <div class="modal__content">
         <h2 class="modal__title">Закажите звонок</h2>
         <span class="modal__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
-        <form class="modal__form" action="" method="post">
+        <form class="modal__form" action="#" method="post">
           <label>
-            <input class="modal__input modal__name" value="Имя" type="text" required autofocus>
+            <input class="modal__input modal__name" placeholder="Имя" type="text" required autofocus>
           </label>
           <label>
-            <input class="modal__input modal__phone" value="Телефон" type="tel" required>
+            <input class="modal__input modal__phone phone" placeholder="Телефон" type="tel"  required>
           </label>
           <label for="text"></label>
-          <textarea class="modal__input modal__text" rows="5" cols="33" id="text">Ваш вопрос
-            </textarea>
+          <textarea class="modal__input modal__text" rows="5" cols="33" id="text" placeholder="Ваш вопрос"></textarea>
           <button class="modal__sent-btn">Отправить</button>
           <label class="modal__label-checkbox" for="assent">
             <input class="modal__personality-data" type="checkbox" id="assent" checked required>
@@ -555,7 +554,6 @@
       </div>
     </div>
   </div>
-
-  <script type="module" src="../js/main.min.js"></script>
+  <script type="module" src="./js/main.min.js"></script>
 </body>
 </html>

@@ -5,7 +5,6 @@
 
   &__wrapper {
     padding: 80px 25px 190px 25px;
-
   }
 
   &__title {
@@ -55,9 +54,10 @@
       padding: 80px 50px 205px 50px;
       margin-top: -15px;
     }
+
     @media (min-resolution: 2dppx) {
-    background-image: url("../img/main_background_tablet_2x.jpg"), $color-black-gradient;
-  }
+      background-image: url("../img/main_background_tablet_2x.jpg"), $color-black-gradient;
+    }
 
     &__title {
       font-size: 64px;
@@ -90,10 +90,10 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main_background_desktop_2x.jpg"), $color-black-gradient;
     }
+
     &__wrapper {
       padding-top: 185px;
       padding-bottom: 280px;
-
     }
 
     &__title {
