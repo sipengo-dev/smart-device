@@ -306,8 +306,14 @@
         <section class="main-container__info info">
           <div class="info__wrapper content-wrapper">
             <div class="info__picture">
-              <img class="info__image" src="../img/2022_tablet.png" srcset="../img/2022_tablet_2x.png"
-                   alt="2022 год." width="150" height="320">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                        srcset="../img/webp/2022_desktop.webp 1x, ../img/webp/2022_desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="../img/webp/2022_tablet.webp 1x, ../img/webp/2022_tablet_2x.webp 2x">
+                <img class="info__image" src="../img/2022_tablet.png" srcset="../img/2022_tablet_2x.png"
+                     alt="2022 год." width="150" height="320">
+              </picture>
             </div>
             <div class="info__content">
               <h2 class="info__title">О компании</h2>
@@ -371,7 +377,6 @@
                 </h3>
                 <button class="catalog__card-link" type="button"></button>
                 <a class="catalog__card" href=""> </a>
-
               </li>
             </ul>
           </div>
@@ -380,8 +385,12 @@
         <section class="main-container__support support" id="support">
           <div class="support__wrapper content-wrapper">
             <div class="support__image">
-              <img src="../img/paper_airplane_desktop.png" srcset="../img/paper_airplane_desktop_2x.png"
-                   alt="Бумажный самолетик." width="510" height="285">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                        srcset="../img/webp/paper_airplane_desktop.webp 1x, ../img/webp/paper_airplane_desktop_2x.webp 2x">
+                <img src="../img/paper_airplane_desktop.png" srcset="../img/paper_airplane_desktop_2x.png"
+                     alt="Бумажный самолетик." width="510" height="285">
+              </picture>
             </div>
             <div class="support__form-container">
               <h2 class="support__title">
@@ -390,11 +399,13 @@
               <p class="support__subtitle">
                 Мы проконсультируем Вас бесплатно
               </p>
-              <form class="support__form" method="post" action="https://echo.htmlacademy.ru/">
-
-                <input class="support__input support__name" type="text" id="name" required value="Имя">
-
-                <input class="support__input support__phone" type="tel" id="call" value="Телефон" required>
+              <form class="support__form" method="post" action="#">
+                <label>
+                  <input class="support__input support__name" type="text" id="name" required value="Имя">
+                </label>
+                <label>
+                  <input class="support__input support__phone" type="tel" id="call" value="Телефон" required>
+                </label>
 
                 <textarea class="support__input support__text" rows="5" cols="33">Ваш вопрос</textarea>
 
