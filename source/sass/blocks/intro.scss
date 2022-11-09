@@ -5,7 +5,7 @@
   background-color: $color-green-blue;
 
   &__wrapper {
-    padding: 80px 25px 190px 25px;
+    padding: 90px 25px 190px 25px;
   }
 
   &__title {
@@ -16,7 +16,8 @@
     text-transform: uppercase;
     color: $color-smoky-white;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0.07em;
   }
 
   &__desc {
@@ -27,12 +28,13 @@
     text-align: left;
     color: $color-smoky-white;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   &__consultation-link-mobile {
     width: 100%;
     text-align: center;
+    padding: 12px 0;
   }
 
   &__consultation-link {
@@ -68,6 +70,7 @@
     &__desc {
       font-size: 22px;
       line-height: 34px;
+      margin-bottom: 54px;
     }
 
     &__consultation-link-mobile {
@@ -76,10 +79,12 @@
 
     &__consultation-link {
       display: block;
-      max-width: 410px;
+      min-width: 410px;
       padding: 15px 25px;
       font-size: 18px;
       line-height: 21px;
+      margin-left: 45px;
+      letter-spacing: 0.05em;
     }
   }
 }

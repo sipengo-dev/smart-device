@@ -12,7 +12,8 @@
     text-align: left;
     color: $color-default-white;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 26px;
+    padding-right: 14px;
   }
 
   &__title-tablet {
@@ -26,7 +27,7 @@
 
   &__item {
     margin-bottom: 30px;
-    padding: 30px 30px 170px 30px;
+    padding: 30px 30px 160px 30px;
     background-size: cover;
     position: relative;
   }
@@ -54,6 +55,10 @@
     color: $color-default-white;
     margin: 0;
     padding: 0 78px 0 0;
+  }
+
+  &__card-title--set {
+    padding-right: 50px;
   }
 
   &__card-link {
@@ -129,13 +134,17 @@
       text-align: left;
       color: $color-default-white;
       margin: 0;
-      margin-bottom: 50px;
+      margin-bottom: 34px;
     }
 
     &__card-title {
       font-size: 20px;
       line-height: 30px;
-      padding: 0 431px 0 0;
+      padding: 0 430px 0 0;
+    }
+
+    &__card-title--set {
+      padding-right: 400px;
     }
 
     &__item--manufacture {
@@ -150,40 +159,39 @@
       background-image: url("../img/background_set_tablet.jpg");
     }
 
-    @media (min-resolution: 2dppx) {
-      .catalog__item--manufacture {
-        background-image: url("../img/background_manufacture_tablet_2x.jpg");
-      }
+    &__item {
+      padding: 36px 45px 154px;
+    }
 
-      .catalog__item--montage {
-        background-image: url("../img/background_montage_tablet_2x.jpg");
-      }
+    &__card-link {
+      width: 60px;
+      height: 60px;
+    }
 
-      .catalog__item--set {
-        background-image: url("../img/background_set_tablet_2x.jpg");
-      }
+    &__card-link::before {
+      width: 7px;
+      top: 29px;
+      right: 25px;
+    }
+
+    &__card-link::after {
+      width: 7px;
+      top: 33px;
+      right: 25px;
     }
   }
+  @media (min-resolution: 2dppx) {
+    .catalog__item--manufacture {
+      background-image: url("../img/background_manufacture_tablet_2x.jpg");
+    }
 
-  &__item {
-    padding: 40px 45px 155px 45px;
-  }
+    .catalog__item--montage {
+      background-image: url("../img/background_montage_tablet_2x.jpg");
+    }
 
-  &__card-link {
-    width: 60px;
-    height: 60px;
-  }
-
-  &__card-link::before {
-    width: 7px;
-    top: 29px;
-    right: 25px;
-  }
-
-  &__card-link::after {
-    width: 7px;
-    top: 33px;
-    right: 25px;
+    .catalog__item--set {
+      background-image: url("../img/background_set_tablet_2x.jpg");
+    }
   }
 }
 

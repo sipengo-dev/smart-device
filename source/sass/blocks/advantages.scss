@@ -2,7 +2,7 @@
   background-color: $color-smoky-white;
 
   &__wrapper {
-    padding: 50px 25px;
+    padding: 50px 25px 33px 25px;
   }
 
   &__list {
@@ -12,7 +12,7 @@
 
   &__item {
     border: 1px solid $color-dark-grey;
-    padding: 30px 30px 35px 30px;
+    padding: 30px 25px 35px 25px;
     min-height: 325px;
     min-width: 270px;
     border-left: 5px solid $color-neon-blue;
@@ -20,7 +20,7 @@
 
   &__icon {
     fill: $color-neon-blue;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
     width: 30px;
     height: 30px;
   }
@@ -42,7 +42,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 44px;
   }
 
   &__title {
@@ -53,7 +53,7 @@
     text-align: left;
     color: $color-sky-blue;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   &__desc {
@@ -71,6 +71,7 @@
   .advantages {
     &__wrapper {
       padding: 80px 50px;
+      padding-bottom: 74px;
     }
 
     &__title {
@@ -84,9 +85,13 @@
     }
 
     &__item {
-      padding: 95px 46px 35px 46px;
+      padding: 45px 40px 30px 40px;
       min-height: 360px;
       min-width: 320px;
+    }
+
+    &__icon {
+      margin-bottom: 10px;
     }
 
     &__item:not(:last-child) {
