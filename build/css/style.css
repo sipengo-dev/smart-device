@@ -526,6 +526,7 @@ button,
   background-image: url("../img/main_background_mobile.jpg"), linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   background-size: cover;
   margin-top: -15px;
+  background-color: #041827;
 }
 
 .intro__wrapper {
@@ -732,14 +733,17 @@ button,
 
 .catalog__item--manufacture {
   background-image: url("../img/background_manufacture_mobile.jpg");
+  background-color: #041827;
 }
 
 .catalog__item--montage {
   background-image: url("../img/background_montage_mobile.jpg");
+  background-color: #041827;
 }
 
 .catalog__item--set {
   background-image: url("../img/background_set_mobile.jpg");
+  background-color: #041827;
 }
 
 .catalog__card-title {
