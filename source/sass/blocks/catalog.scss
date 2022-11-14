@@ -70,6 +70,7 @@
     border-radius: 3px;
     bottom: 0;
     right: 0;
+    margin: 0;
   }
 
   &__card-link::before {
@@ -94,9 +95,10 @@
 
   &__card {
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   @media (min-resolution: 2dppx) {
@@ -180,6 +182,7 @@
       right: 25px;
     }
   }
+
   @media (min-resolution: 2dppx) {
     .catalog__item--manufacture {
       background-image: url("../img/background_manufacture_tablet_2x.jpg");
@@ -207,7 +210,7 @@
 
     &__list {
       display: grid;
-      grid-template-columns: 350px 350px 350px;
+      grid-template-columns: repeat(auto-fill, 350px);
       column-gap: 85px;
     }
 

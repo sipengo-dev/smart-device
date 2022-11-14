@@ -1,5 +1,9 @@
 .footer {
   background-color: $color-green-blue;
+
+  &__wrapper {
+    padding-bottom: 35px;
+  }
 }
 
 @media (min-width: $tablet-width) {

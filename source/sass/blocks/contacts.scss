@@ -29,6 +29,11 @@
     text-align: left;
   }
 
+  &__link {
+    color: $color-default-white;
+    opacity: 0.7;
+  }
+
   &__address {
     margin-bottom: 15px;
     line-height: 19px;

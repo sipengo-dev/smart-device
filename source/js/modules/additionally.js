@@ -15,7 +15,7 @@ function openContent() {
 
 buttonDetailsText.addEventListener('click', function (event) {
   event.preventDefault();
-  buttonDetailsText.innerHTML = buttonDetailsText.innerHTML === 'Подробнее' ? 'Скрыть' : 'Подробнее';
+  buttonDetailsText.innerHTML = buttonDetailsText.innerHTML === 'Подробнее' ? 'Свернуть' : 'Подробнее';
 });
 
 export {buttonDetailsText, openContent};

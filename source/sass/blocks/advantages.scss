@@ -2,7 +2,7 @@
   background-color: $color-smoky-white;
 
   &__wrapper {
-    padding: 50px 25px 33px 25px;
+    padding: 50px 25px;
   }
 
   &__list {
@@ -12,15 +12,15 @@
 
   &__item {
     border: 1px solid $color-dark-grey;
-    padding: 30px 25px 35px 25px;
-    min-height: 325px;
+    padding: 30px 30px 35px 25px;
+    height: 340px;
     min-width: 270px;
     border-left: 5px solid $color-neon-blue;
   }
 
   &__icon {
     fill: $color-neon-blue;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     width: 30px;
     height: 30px;
   }
@@ -42,7 +42,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 44px;
+    margin-bottom: 30px;
   }
 
   &__title {
@@ -109,7 +109,7 @@
 @media (min-width: $desktop-width) {
   .advantages {
     &__wrapper {
-      padding-top: 120px 0;
+      padding-top: 120px;
     }
   }
 }

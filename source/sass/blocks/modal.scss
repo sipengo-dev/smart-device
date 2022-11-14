@@ -27,6 +27,7 @@
     right: 15px;
     background-color: $color-neon-blue;
     border: none;
+    cursor: pointer;
   }
 
   &__close-btn::after {
@@ -110,6 +111,7 @@
     background-color: $color-green-blue;
     text-transform: uppercase;
     margin-bottom: 20px;
+    cursor: pointer;
   }
 
   &__label-checkbox {
@@ -120,6 +122,7 @@
     color: $color-default-white;
     text-align: left;
     position: relative;
+    cursor: pointer;
   }
 
   &__mark {
@@ -127,8 +130,8 @@
     width: 15px;
     height: 14px;
     border: 1px solid $color-default-white;
-    top: 0;
-    left: 0;
+    top: 2px;
+    left: 2px;
     background-color: $color-neon-blue;
   }
 
