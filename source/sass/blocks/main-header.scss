@@ -30,18 +30,18 @@
     display: none;
   }
 
-  &__text {
-    display: none;
-  }
-
-  &__logo-text {
-    display: none;
-  }
-
-  &__logo-icon {
+  &__logo-icon-mobile {
     height: 35px;
     width: 35px;
     fill: $color-sky-blue;
+  }
+
+  &__logo-icon-desktop {
+    display: none;
+  }
+
+  &__text {
+    display: none;
   }
 
   &__icon {
@@ -58,38 +58,14 @@
       padding: 20px 70px 25px 50px;
     }
 
-    &__logo {
-      display: flex;
+    &__logo-icon-mobile {
+      display: none;
     }
 
-    &__logo-text {
-      display: flex;
-      flex-direction: column;
-      margin-left: 15px;
-    }
-
-    &__smart-device {
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 29px;
-      text-align: left;
-      color: $color-smoky-white;
-      margin-bottom: 5px;
-    }
-
-    &__smart-technologies {
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 14px;
-      text-align: left;
-      color: $color-default-white;
-      opacity: 0.7;
-      margin: 0;
-    }
-
-    &__logo-icon {
+    &__logo-icon-desktop {
+      display: block;
       height: 55px;
-      width: 55px;
+      width: 215px;
     }
   }
 }

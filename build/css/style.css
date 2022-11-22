@@ -272,6 +272,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   background-color: rgba(3, 16, 27, 0.7);
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .modal__feedback {
@@ -421,11 +423,12 @@ button,
   line-height: 19px;
   color: #ffffff;
   text-align: center;
-  padding: 15px 60px;
+  padding: 13px 60px;
   background-color: #041827;
   text-transform: uppercase;
   margin-bottom: 20px;
   cursor: pointer;
+  letter-spacing: 0.05em;
 }
 
 .modal__label-checkbox {
@@ -504,18 +507,18 @@ button,
   display: none;
 }
 
-.main-header__text {
-  display: none;
-}
-
-.main-header__logo-text {
-  display: none;
-}
-
-.main-header__logo-icon {
+.main-header__logo-icon-mobile {
   height: 35px;
   width: 35px;
   fill: #00b2ff;
+}
+
+.main-header__logo-icon-desktop {
+  display: none;
+}
+
+.main-header__text {
+  display: none;
 }
 
 .main-header__icon {
@@ -1007,7 +1010,7 @@ button,
 }
 
 .social__logo-icon {
-  width: 55px;
+  width: 215px;
   height: 55px;
   fill: #00b2ff;
 }
@@ -1016,25 +1019,6 @@ button,
   fill: #f8fdff;
   height: 40px;
   width: 40px;
-}
-
-.social__smart-device {
-  color: #ffffff;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 29px;
-  text-align: left;
-  margin: 0;
-}
-
-.social__smart-technologies {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
-  text-align: left;
-  color: #f8fdff;
-  margin-bottom: 0;
-  margin-top: 3px;
 }
 
 .social__list {
@@ -1091,7 +1075,7 @@ button,
 }
 
 .contacts__wrapper {
-  padding: 20px 25px;
+  padding: 20px 25px 8px;
   border-bottom: 1px solid rgba(248, 253, 255, 0.7);
 }
 
@@ -1204,45 +1188,14 @@ button,
     padding: 20px 70px 25px 50px;
   }
 
-  .main-header__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .main-header__logo-icon-mobile {
+    display: none;
   }
 
-  .main-header__logo-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 15px;
-  }
-
-  .main-header__smart-device {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 29px;
-    text-align: left;
-    color: #f2f5f6;
-    margin-bottom: 5px;
-  }
-
-  .main-header__smart-technologies {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 14px;
-    text-align: left;
-    color: #ffffff;
-    opacity: 0.7;
-    margin: 0;
-  }
-
-  .main-header__logo-icon {
+  .main-header__logo-icon-desktop {
+    display: block;
     height: 55px;
-    width: 55px;
+    width: 215px;
   }
 
   .intro {
@@ -1603,6 +1556,10 @@ button,
     margin-right: auto;
   }
 
+  .content-wrapper {
+    max-width: 1220px;
+  }
+
   .main-header {
     position: sticky;
     top: 0;
@@ -1664,7 +1621,8 @@ button,
   }
 
   .intro__wrapper {
-    padding-top: 185px;
+    padding-top: 200px;
+    padding-left: 125px;
     padding-bottom: 280px;
   }
 
@@ -1674,8 +1632,24 @@ button,
     margin-bottom: 40px;
   }
 
+  .intro__desc {
+    max-width: 500px;
+    margin-bottom: 45px;
+  }
+
+  .intro__consultation-link {
+    margin-left: 0px;
+  }
+
   .advantages__wrapper {
-    padding-top: 120px;
+    padding: 120px 0 50px;
+  }
+
+  .advantages__item {
+    padding: 45px 40px 30px 40px;
+    height: unset;
+    min-height: 300px;
+    min-width: 595px;
   }
 
   .info {
@@ -1774,6 +1748,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-top: 0;
   }
 
   .social__logotype {

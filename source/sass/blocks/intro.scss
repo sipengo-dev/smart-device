@@ -102,7 +102,8 @@
     }
 
     &__wrapper {
-      padding-top: 185px;
+      padding-top: 200px;
+      padding-left: 125px;
       padding-bottom: 280px;
     }
 
@@ -110,6 +111,15 @@
       font-size: 80px;
       line-height: 93px;
       margin-bottom: 40px;
+    }
+
+    &__desc {
+      max-width: 500px;
+      margin-bottom: 45px;
+    }
+
+    &__consultation-link {
+      margin-left: 0px;
     }
   }
 }

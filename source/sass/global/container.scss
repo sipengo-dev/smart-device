@@ -10,3 +10,9 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .content-wrapper {
+    max-width: $max-desktop-width;
+  }
+}

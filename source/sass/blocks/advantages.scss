@@ -109,7 +109,14 @@
 @media (min-width: $desktop-width) {
   .advantages {
     &__wrapper {
-      padding-top: 120px;
+      padding: 120px 0 50px;
+    }
+
+    &__item {
+      padding: 45px 40px 30px 40px;
+      height: unset;
+      min-height: 300px;
+      min-width: 595px;
     }
   }
 }
