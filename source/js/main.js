@@ -1,14 +1,10 @@
-import {openModal, closeModal} from './modules/modal.js';
+import {openModal, closeModal, setFocusToName} from './modules/modal.js';
 import {handleButtonClick} from './modules/consultation.js';
 import {buttonDetailsText, openContent} from './modules/additionally.js';
-import {
-  toggleAccordionPoints,
-  toggleAccordionContacts,
-  accordionButtonContacts,
-  accordionButtonPoints
-} from './modules/accordion.js';
+import initAccordion from './modules/accordion.js';
 import IMask from 'imask';
 
+initAccordion();
 const buttonOpenModal = document.querySelector('.main-header__feedback-btn');
 const buttonCloseModal = document.querySelector('.modal__close-btn');
 const buttonMobileConsultation = document.querySelector('.intro__consultation-link-mobile');
@@ -16,12 +12,10 @@ const buttonTabletConsultation = document.querySelector('.intro__consultation-li
 
 buttonOpenModal.addEventListener('click', openModal);
 buttonCloseModal.addEventListener('click', closeModal);
+buttonOpenModal.addEventListener('click', setFocusToName);
 
 buttonMobileConsultation.addEventListener('click', handleButtonClick);
 buttonTabletConsultation.addEventListener('click', handleButtonClick);
-
-accordionButtonPoints.addEventListener('click', toggleAccordionPoints);
-accordionButtonContacts.addEventListener('click', toggleAccordionContacts);
 
 buttonDetailsText.addEventListener('click', openContent);
 
@@ -33,5 +27,3 @@ phoneInputs.forEach((phoneInput) => {
   });
   phoneInput.addEventListener('input', phoneMask);
 });
-
-

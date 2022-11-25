@@ -1,8 +1,7 @@
-import {filterStageFromList} from '@babel/preset-env/lib/utils';
-
 const modal = document.querySelector('#modalFeedback');
 const body = document.querySelector('.body');
 const app = document.querySelector('#app');
+const modalBoxName = document.querySelector('#modal-name');
 
 function onModalEscKeydown(evt) {
   if (evt.keyCode === 9 && evt.srcElement.tabIndex === 6) {
@@ -39,5 +38,8 @@ modal.addEventListener('click', function (evt) {
   }
 });
 
+function setFocusToName() {
+  setTimeout(modalBoxName.focus(), 2000);
+}
 
-export {openModal, closeModal};
+export {openModal, closeModal, setFocusToName};

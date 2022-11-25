@@ -1121,11 +1121,34 @@ button,
   line-height: 19px;
 }
 
-.accordion-open {
-  position: relative;
+.accordion__wrapper {
+  padding: 20px 25px 8px 25px;
+  border-bottom: 1px solid rgba(248, 253, 255, 0.7);
 }
 
-.accordion {
+.accordion__title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+  letter-spacing: 0.05em;
+}
+
+.accordion__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.accordion__btn {
+  position: relative;
   display: block;
   cursor: pointer;
   border: 0;
@@ -1134,7 +1157,7 @@ button,
   background-color: #041827;
 }
 
-.accordion-close::before {
+.accordion__btn::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -1143,7 +1166,7 @@ button,
   top: 50%;
 }
 
-.accordion-close::after {
+.accordion__btn::after {
   content: "";
   position: absolute;
   width: 15px;
@@ -1155,28 +1178,35 @@ button,
   transform: rotate(90deg);
 }
 
-.accordion-close {
-  position: relative;
-}
-
-.accordion-open::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  border: 1px solid #c4c4c4;
-  right: 0;
-  top: 50%;
-}
-
-.accordion-list {
-  display: block;
+.accordion__body {
+  display: none;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
   color: #ffffff;
   opacity: 0.7;
+  text-align: left;
 }
 
-.accordion-list-close {
+.accordion.open .accordion__btn::after {
   display: none;
 }
+
+.accordion.open .accordion__body {
+  display: block;
+}
+
+/*@media (min-width: $tablet-width) {
+  .accordion {
+    display: none;
+  }
+
+  .accordion-list {
+    display: block;
+  }
+}
+**/
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
@@ -1522,14 +1552,6 @@ button,
 
   .contacts__item {
     margin-bottom: 5px;
-  }
-
-  .accordion {
-    display: none;
-  }
-
-  .accordion-list {
-    display: block;
   }
 }
 
